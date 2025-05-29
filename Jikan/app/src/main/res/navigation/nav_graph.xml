@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/alarmFragment">
+
+    <fragment
+        android:id="@+id/alarmFragment"
+        android:name="com.micah.jikan.AlarmFragment"
+        android:label="fragment_alarm"
+        tools:layout="@layout/fragment_alarm" >
+        <action
+            android:id="@+id/action_alarmFragment_to_savedAlarmsFragment"
+            app:destination="@id/savedAlarmsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedAlarmsFragment"
+        android:name="com.micah.jikan.SavedAlarmsFragment"
+        android:label="fragment_saved_alarms"
+        tools:layout="@layout/fragment_saved_alarms" />
+</navigation>
